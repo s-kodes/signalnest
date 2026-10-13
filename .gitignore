@@ -1,0 +1,23 @@
+# Python virtual environment
+.venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Keep the example configuration in Git
+!.env.example
+
+# Test and tooling caches
+.pytest_cache/
+.ruff_cache/
+
+# macOS metadata
+.DS_Store
+
+# Python package build metadata
+*.egg-info/

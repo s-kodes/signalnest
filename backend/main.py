@@ -1,6 +1,8 @@
-def main():
-    print("Welcome to SignalNest!")
+from fastapi import FastAPI
+
+app = FastAPI(title="SignalNest API")
 
 
-if __name__ == "__main__":
-    main()
+@app.get("/")
+def home():
+    return {"message": "Welcome to SignalNest!"}

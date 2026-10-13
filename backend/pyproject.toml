@@ -3,7 +3,13 @@ name = "signalnest"
 version = "0.1.0"
 description = "A personal engineering learning hub"
 requires-python = ">=3.13"
-dependencies = ["fastapi[standard]>=0.143.0",
+dependencies = [
+    "fastapi[standard]>=0.143.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9.1.1",
 ]
 
 [build-system]
